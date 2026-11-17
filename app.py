@@ -1,8 +1,9 @@
+
 from flask import Flask, request, render_template
 
-app = Flask(__name__) # no changes to name
+app = Flask(__name__) 
 
-@app.route("/") # run this first
+@app.route("/") 
 
 def index():
     return(render_template('index.html'))
